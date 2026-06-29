@@ -1,0 +1,260 @@
+<div class="main-container flex-column">
+
+    <div class="header flex-row">
+
+        <!---Col.1-->
+        <div class="flex-column grow">
+
+            <div class="section flex-column">
+                <div class="section-title">
+                    <span data-i18n="name">Héroe</span>
+                </div>
+
+                <input name="attr_character_name" type="text" title="{@character_name}" />
+            </div>
+
+            <div class="section flex-column">
+                <div class="section-title">
+                    <span data-i18n="raza">Raza</span>
+                </div>
+                <!--<input name="attr_raza" type="text" title="{@raza}" />
+        -->
+                <fieldset class="repeating_razas">
+                    <div class="flex-column  repeatable-item">
+                        <div class="repeatable-row">
+                            <select class="box-margins" name="attr_razas" data-i18n-title="razas" title="Razas">
+                                <option value=""></option>
+                                <option value="elf" selected="selected" data-i18n="elf">Elfo</option>
+                                <option value="goron" data-i18n="goron">Goron</option>
+                                <option value="avian" data-i18n="avian">Avian</option>
+                                <option value="aquarian" data-i18n="aquarian">Aquarian</option>
+                                <option value="seedling" data-i18n="seedling">Seedling</option>
+                            </select>
+                        </div>
+                </fieldset>
+            </div>
+
+            <div class="section flex-column">
+                <div class="section-title">
+                    <span data-i18n="especial">Especial</span>
+                </div>
+                <textarea name="attr_especial" title="{@especial}"></textarea>
+            </div>
+
+            <div class="section flex-column">
+                <div class="section-title">
+                    <span data-i18n="vida">Vida</span>
+                </div>
+                <!--type == lo de la vida con cruces y resaltado-->
+                <input name="attr_vida" type="text" title="{@vida}" />
+                <div class="12check">
+                    <input type="checkbox" name="attr_vida" value="1" checked >
+                    <input type="checkbox" name="attr_vida" value="1"  >
+                    <input type="checkbox" name="attr_vida" value="1"  >
+                    <input type="checkbox" name="attr_vida" value="1"  >
+                    <input type="checkbox" name="attr_vida" value="1"  >
+                    <input type="checkbox" name="attr_vida" value="1"  >
+                    <input type="checkbox" name="attr_vida" value="1"  >
+                    <input type="checkbox" name="attr_vida" value="1"  >
+                    <input type="checkbox" name="attr_vida" value="1"  >
+                    <input type="checkbox" name="attr_vida" value="1"  >
+                    <input type="checkbox" name="attr_vida" value="1"  >
+                    <input type="checkbox" name="attr_vida" value="1"  >
+                </div>
+            </div>
+
+            <div class="section flex-column">
+                <div class="section-title">
+                    <span data-i18n="energia">Energía</span>
+                </div>
+                <!--type == hacer lo de la energia con cruces y resaltado-->
+                <input name="attr_energia" type="text" title="{@energia}" />
+                <div class="12check">
+                    <input type="checkbox" name="attr_energia" value="1" checked >
+                    <input type="checkbox" name="attr_energia" value="1"  >
+                    <input type="checkbox" name="attr_energia" value="1"  >
+                    <input type="checkbox" name="attr_energia" value="1"  >
+                    <input type="checkbox" name="attr_energia" value="1"  >
+                    <input type="checkbox" name="attr_energia" value="1"  >
+                    <input type="checkbox" name="attr_energia" value="1"  >
+                    <input type="checkbox" name="attr_energia" value="1"  >
+                    <input type="checkbox" name="attr_energia" value="1"  >
+                    <input type="checkbox" name="attr_energia" value="1"  >
+                    <input type="checkbox" name="attr_energia" value="1"  >
+                    <input type="checkbox" name="attr_energia" value="1"  >
+                </div>
+            </div>
+        </div>
+
+        <!---Col.2-->
+        <div class="flex-column grow">
+            <div class="section flex-column historic grow">
+                <input name="attr_fuerza" type="number" title="{@fuerza}" />
+                <div class="section-title">
+                    <span data-i18n="fuerza">Fuerza / Might</span>
+                </div>
+            </div>
+
+
+            <div class="flex-row">
+                <div class="flex-column center">
+                    <div class="valentia">
+                        <input name="attr-valentia" type="number" title="{@valentia}" />
+                    </div>
+
+                </div>
+
+                <div class="flex-column center">
+                    <div class="valentia">
+                        <input name="attr_perspicacia" type="number" title="{@perspicacia}" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex-row">
+                <div class="flex-column center">
+                    <div class="section-subtitle ">
+                        <span data-i18n="valentia">Valentía / bravery</span>
+                    </div>
+                </div>
+
+                <div class="flex-column center">
+                    <div class="section-subtitle ">
+                        <span data-i18n="perspicacia">Perspicacia/Insight</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section flex-column">
+                <div class="section-title">
+                    <span data-i18n="apariencia">Apariencia</span>
+                </div>
+                <img name="attr_character_avatar">
+
+            </div>
+        </div>
+
+        <!---Col.3-->
+        <div class="flex-column grow">
+            <div class="flex-column">
+                <div class="section flex-column">
+                    <div class="section-title">
+                        <span data-i18n="bolsa">Bolsa</span>
+                    </div>
+                    <input type="bolsapequenia" name="attr_bolsapequenia" value="1" checked>
+                    <span data-i18n="bolsapequenia">pequeña</span>
+
+                    <input type="radio" value="pequeña" name="attr_Multiplier" checked>
+                    <span data-i18n="bolsapequenia">pequeña</span>
+
+                    <input type="radio" value="grande" name="attr_Multiplier">
+                    <span data-i18n="bolsapequenia">grande</span>
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div class="section-title">
+                    <span data-i18n="snack">Snack</span>
+                </div>
+                <!--AÑADIR línea de 5 checkbox -->
+                <div class="12check">
+                    <input type="checkbox" name="attr_snack" value="1" checked >
+                    <input type="checkbox" name="attr_snack" value="1"  >
+                    <input type="checkbox" name="attr_snack" value="1"  >
+                    <input type="checkbox" name="attr_snack" value="1"  >
+                    <input type="checkbox" name="attr_snack" value="1"  >
+                </div>
+
+            </div>
+            <div class="flex-column">
+                <div class="section-title">
+                    <span data-i18n="comida">Comida</span>
+                </div>
+                <!--AÑADIR línea de 5 checkbox -->
+                <div class="12check">
+                    <input type="checkbox" name="attr_comida" value="1" checked >
+                    <input type="checkbox" name="attr_comida" value="1"  >
+                    <input type="checkbox" name="attr_comida" value="1"  >
+                    <input type="checkbox" name="attr_comida" value="1"  >
+                    <input type="checkbox" name="attr_comida" value="1"  >
+                </div>
+            </div>
+
+            <div class="flex-column">
+                <div class="section-title">
+                    <span data-i18n="llaves">Llaves</span>
+                </div>
+                <!--AÑADIR línea con 5 checkbox  -->
+                <div class="12check">
+                    <input type="checkbox" name="attr_llaves" value="1" checked >
+                    <input type="checkbox" name="attr_llaves" value="1"  >
+                    <input type="checkbox" name="attr_llaves" value="1"  >
+                    <input type="checkbox" name="attr_llaves" value="1"  >
+                    <input type="checkbox" name="attr_llaves" value="1"  >
+                </div>
+            </div>
+            <div class="flex-column">
+                <div class="section-title">
+                    <span data-i18n="Gemas">Gemas</span>
+                </div>
+                <div class="gemas">
+                    <input name="attr-gemas" type="number" title="{@gemas}" />
+                </div>
+            </div>
+            <div class="flex-column">
+                <div class="section-title">
+                    <span data-i18n="Fragments">Fragmentos</span>
+                </div>
+                <div class="fragmentos">
+                    <input name="attr-fragments" type="number" title="{@fragments}" />
+                </div>
+            </div>
+        </div>
+
+        <!---Col.4-->
+        <div class="flex-column historic grow">
+            <!-- Ocho huecos para subir imágenes en la columna 4 -->
+            <div class="upload-images-section" style="margin-top:10px;">
+                <div class="section-title">
+                    <span data-i18n="subir-imagenes">Subir Imágenes</span>
+                </div>
+                <div class="image-upload-grid" style="display: grid; grid-template-rows: repeat(4, 1fr); gap: 5px;">
+                    <!-- Repetir esto 8 veces para los 8 huecos -->
+                    <div class="image-upload-cell">
+                        <input type="file" accept="image/*" name="player_image_upload_1" class="player-image-upload" />
+                    </div>
+                    <div class="image-upload-cell">
+                        <input type="file" accept="image/*" name="player_image_upload_2" class="player-image-upload" />
+                    </div>
+                    <div class="image-upload-cell">
+                        <input type="file" accept="image/*" name="player_image_upload_3" class="player-image-upload" />
+                    </div>
+                    <div class="image-upload-cell">
+                        <input type="file" accept="image/*" name="player_image_upload_4" class="player-image-upload" />
+                    </div>
+                    <div class="image-upload-cell">
+                        <input type="file" accept="image/*" name="player_image_upload_5" class="player-image-upload" />
+                    </div>
+                    <div class="image-upload-cell">
+                        <input type="file" accept="image/*" name="player_image_upload_6" class="player-image-upload" />
+                    </div>
+                    <div class="image-upload-cell">
+                        <input type="file" accept="image/*" name="player_image_upload_7" class="player-image-upload" />
+                    </div>
+                    <div class="image-upload-cell">
+                        <input type="file" accept="image/*" name="player_image_upload_8" class="player-image-upload" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!--------------------------------------------------------------------->
+
+</div>
+
+<!-- end of sheet -->
