@@ -167,7 +167,7 @@
 }
  /*************************************************/
 .charsheet {
-  background-image: url(https://cdn.pixabay.com/photo/2015/09/29/15/12/stars-964022_960_720.png); /*black space with tiny white stars*/
+  background-image: url(HeroesOfCeruleaCharSheet/HeroesOfCerulea.png); /*black space with tiny white stars*/
   background-color: rgb(230, 167, 42);
   background-repeat: no-repeat;
   color: white;
@@ -189,37 +189,14 @@
 	width: 50%;
 }
 
-.sheet-heropoints {
-	background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/AdventureTime/imgs/heroepoints.png");
-	background-repeat: no-repeat;
-	background-size: 140px 79px;
-	width: 140px;
-	height: 79px;
-}
-
 .sheet-heropoints-input {
 	margin: 23px 0px 0px 100px !important;
 }
 
-.sheet-experiencepoints {
-	background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/AdventureTime/imgs/experiencepoints.png");
-	background-repeat: no-repeat;
-	background-size: 140px 86px;
-	width: 140px;
-	height: 86px;
-}
 
 .sheet-experiencepoints-input {
 	margin: 20px 0px 0px 20px !important;
 	width: 4em !important;
-}
-
-.sheet-health {
-	background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/AdventureTime/imgs/coracao.png");
-	background-repeat: no-repeat;
-	background-size: 80px;
-	width: 80px;
-	height: 80px;
 }
 
 .sheet-health-input {
@@ -232,13 +209,6 @@
 	flex-grow: 1;
 }
 
-.sheet-attribute-box {
-	background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/AdventureTime/imgs/attribute.png");
-	background-repeat: no-repeat;
-	background-size: 40px;
-	width: 40px;
-	height: 40px;
-}
 
 .sheet-box-margins {
 	margin: 2px;
